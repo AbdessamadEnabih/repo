@@ -9,7 +9,7 @@
       <!-- CSRF Token -->
       <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
       <link rel="icon" type="image/png" href="<?php echo e(asset('img/favicon.png')); ?>">
-      <title>Doctorino - <?php echo $__env->yieldContent('title'); ?> </title>
+      <title>Cabinet Medical - <?php echo $__env->yieldContent('title'); ?> </title>
       <!-- Custom styles for this template-->
     <!-- Custom fonts for this template-->
     <link href="<?php echo e(asset('dashboard/vendor/fontawesome-free/css/all.min.css')); ?>" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
     <link href="<?php echo e(asset('dashboard/css/gijgo.min.css')); ?>" rel="stylesheet">
     <script>
              "use strict";
-               const SITE_URL              = "<?php echo e(url('/')); ?>";             
+               const SITE_URL              = "<?php echo e(url('/')); ?>";
         </script>
    <?php echo $__env->yieldContent('header'); ?>
    </head>
@@ -286,7 +286,7 @@
                <div class="modal-body"><?php echo e(__('sentence.Ready to Leave Msg')); ?></div>
                <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal"><?php echo e(__('sentence.Cancel')); ?></button>
-                  <a class="btn btn-primary" href="<?php echo e(route('logout')); ?>" 
+                  <a class="btn btn-primary" href="<?php echo e(route('logout')); ?>"
                      onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><?php echo e(__('sentence.Logout')); ?></a>
                   <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" class="d-none">
                      <?php echo csrf_field(); ?>
@@ -315,7 +315,7 @@
             </div>
          </div>
       </div>
-      
+
    <script src="<?php echo e(asset('dashboard/js/vue.js')); ?>"></script>
    <script src="<?php echo e(asset('dashboard/vendor/jquery/jquery.min.js')); ?>"></script>
 
@@ -335,7 +335,7 @@
                                     message: "<?php echo session('success'); ?>"
                                 },{
                                     type: "success",
-                                    delay:5000,                                    
+                                    delay:5000,
                                 });
                 </script>
             <?php endif; ?>
@@ -346,22 +346,23 @@
                                     message: "<?php echo session('danger'); ?>"
                                 },{
                                     type: "danger",
-                                    delay:5000,                                    
+                                    delay:5000,
                                 });
                 </script>
             <?php endif; ?>
-            
+
             <?php if(session('warning')): ?>
                   <script type="text/javascript">
                     $.notify({
                                     message: "<?php echo session('warning'); ?>"
                                 },{
                                     type: "warning",
-                                    delay:5000,                                    
+                                    delay:5000,
                                 });
                 </script>
             <?php endif; ?>
 
       <?php echo $__env->yieldContent('footer'); ?>
    </body>
-</html><?php /**PATH C:\Users\nabih\Desktop\Projects\laravel\repo\resources\views/layouts/master.blade.php ENDPATH**/ ?>
+</html>
+<?php /**PATH C:\Users\nabih\Desktop\Projects\laravel\repo\resources\views/layouts/master.blade.php ENDPATH**/ ?>

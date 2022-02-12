@@ -8,7 +8,7 @@
       <meta name="author" content="">
       <!-- CSRF Token -->
       <meta name="csrf-token" content="zXbiSv6MysbCo84DXZ4JSrdGP6dkFJbqvwo0wgSS">
-      <title>Doctorino - {{ __('sentence.View Prescription') }} 
+      <title>Cabinet - {{ __('sentence.View Prescription') }}
       </title>
       <!-- Custom styles for this template-->
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">

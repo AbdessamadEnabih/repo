@@ -15,7 +15,7 @@ class SettingsSeeder extends Seeder
     {
          DB::table('settings')->insert([
             'option_name' => 'system_name',
-            'option_value' => 'Doctorino Doctor Chamber',
+            'option_value' => 'Doctor Chamber',
         ]);
 
          DB::table('settings')->insert([

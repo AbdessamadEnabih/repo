@@ -68,8 +68,8 @@ class PatientController extends Controller
 										'weight' => $request->weight,
 										'height' => $request->height]);
 
-		
-		
+
+
 
 		return Redirect::back()->with('success', __('sentence.Patient Updated Successfully'));
 
@@ -86,7 +86,7 @@ class PatientController extends Controller
     	]);
 
     	$user = new User();
-		$user->password = Hash::make('doctorino123');
+		$user->password = Hash::make('cabinetmedical123');
 		$user->email = $request->email;
 		$user->name = $request->name;
 		$user->save();
@@ -118,9 +118,9 @@ class PatientController extends Controller
         $historys = History::where('user_id' ,$id)->OrderBy('id','Desc')->get();
 
     	return view('patient.view', [
-    		'patient' => $patient, 
-    		'prescriptions' => $prescriptions, 
-    		'appointments' => $appointments, 
+    		'patient' => $patient,
+    		'prescriptions' => $prescriptions,
+    		'appointments' => $appointments,
     		'invoices' => $invoices,
     		'documents' => $documents,
     		'historys' => $historys

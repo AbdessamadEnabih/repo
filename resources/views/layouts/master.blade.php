@@ -9,7 +9,7 @@
       <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
-      <title>Doctorino - @yield('title') </title>
+      <title>Cabinet Medical - @yield('title') </title>
       <!-- Custom styles for this template-->
     <!-- Custom fonts for this template-->
     <link href="{{ asset('dashboard/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
     <link href="{{ asset('dashboard/css/gijgo.min.css') }}" rel="stylesheet">
     <script>
              "use strict";
-               const SITE_URL              = "{{ url('/') }}";             
+               const SITE_URL              = "{{ url('/') }}";
         </script>
    @yield('header')
    </head>
@@ -38,7 +38,7 @@
                   <div class="sidebar-brand-icon rotate-n-15">
                      <i class="fas fa-user-md"></i>
                   </div>
-                  <div class="sidebar-brand-text mx-3">Doctorino <sup>3.0</sup></div>
+                  <div class="sidebar-brand-text mx-3">Cabinet</div>
                </a>
                <!-- Divider -->
                <hr class="sidebar-divider my-0">
@@ -279,7 +279,7 @@
                <div class="modal-body">{{ __('sentence.Ready to Leave Msg') }}</div>
                <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">{{ __('sentence.Cancel') }}</button>
-                  <a class="btn btn-primary" href="{{ route('logout') }}" 
+                  <a class="btn btn-primary" href="{{ route('logout') }}"
                      onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('sentence.Logout') }}</a>
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                      @csrf
@@ -308,7 +308,7 @@
             </div>
          </div>
       </div>
-      
+
    <script src="{{ asset('dashboard/js/vue.js') }}"></script>
    <script src="{{ asset('dashboard/vendor/jquery/jquery.min.js') }}"></script>
 
@@ -328,7 +328,7 @@
                                     message: "<?php echo session('success'); ?>"
                                 },{
                                     type: "success",
-                                    delay:5000,                                    
+                                    delay:5000,
                                 });
                 </script>
             @endif
@@ -339,18 +339,18 @@
                                     message: "<?php echo session('danger'); ?>"
                                 },{
                                     type: "danger",
-                                    delay:5000,                                    
+                                    delay:5000,
                                 });
                 </script>
             @endif
-            
+
             @if (session('warning'))
                   <script type="text/javascript">
                     $.notify({
                                     message: "<?php echo session('warning'); ?>"
                                 },{
                                     type: "warning",
-                                    delay:5000,                                    
+                                    delay:5000,
                                 });
                 </script>
             @endif
