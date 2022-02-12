@@ -37,13 +37,13 @@
                   <td>{{ $prescription->id }}</td>
                   <td><a href="{{ url('patient/view/'.$prescription->user_id) }}"> {{ $prescription->User->name }} </a></td>
                   <td class="text-center">{{ $prescription->created_at->format('d M Y H:i') }}</td>
-                  <td class="text-center"> 
+                  <td class="text-center">
                      <label class="badge badge-primary-soft">
                         {{ count($prescription->Drug) }} Drugs
                      </label>
                      <label class="badge badge-primary-soft">
                         {{ count($prescription->Test) }} Tests
-                     </label> 
+                     </label>
                   </td>
                   <td class="text-center">
                      <a href="{{ url('prescription/view/'.$prescription->id) }}" class="btn btn-outline-success btn-circle btn-sm"><i class="fa fa-eye"></i></a>
@@ -60,4 +60,5 @@
       </div>
    </div>
 </div>
+@endif
 @endsection

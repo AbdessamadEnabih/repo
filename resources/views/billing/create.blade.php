@@ -39,7 +39,7 @@
 
                <div class="form-group">
                   <label for="DueAmount">Due Amount</label>
-                  <input class="form-control" type="number" name="due_amount" id="DueAmount">
+                  <input class="form-control" type="text" name="due_amount" id="DueAmount">
                </div>
 
 
